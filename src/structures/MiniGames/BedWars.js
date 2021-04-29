@@ -227,7 +227,7 @@ function getLevelForExp (exp) {
     level++;
     expWithoutPrestiges -= expForEasyLevel;
   }
-  return level + Math.floor(expWithoutPrestiges / 5000);
+  return level + expWithoutPrestiges / 5000;
 }
 /**
  * @typedef {string} BedWarsPrestige
